@@ -1,9 +1,11 @@
 from kuhn3p import deck, dealer, players
 
 num_hands   = 3000
-the_players = [players.Chump(0.99, 0.01, 0.0), 
-	       players.Chump(0.0, 1.0, 0.0), 
-	       players.Bluffer(0.2) ]
+the_players = [
+	#players.Chump(0.99, 0.01, 0.0),
+	players.KEVlNBOT(),
+	players.Chump(0.0, 1.0, 0.0), 
+	players.Bluffer(0.2) ]
 
 total = [0, 0, 0]
 for hand in range(num_hands):
